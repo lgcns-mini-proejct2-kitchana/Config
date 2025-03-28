@@ -8,6 +8,11 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: guest
+    password: guest
 
 server:
   port: 8091
@@ -20,3 +25,9 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://eureka:8761/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, busrefresh
