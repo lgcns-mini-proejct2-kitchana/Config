@@ -1,6 +1,6 @@
 naver:
-  #client-id: ${NAVER_CLIENT_ID}
-  client-id: ERROR 
+  client-id: ${NAVER_CLIENT_ID}
+  # client-id: ERROR 
   client-secret: ${NAVER_CLIENT_SECRET}
 
 groq:
