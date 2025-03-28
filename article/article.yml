@@ -36,3 +36,5 @@ management:
       exposure:
         include: health, busrefresh
 
+key: pleasehelpme
+
