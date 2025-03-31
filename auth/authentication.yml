@@ -2,9 +2,10 @@ spring:
   datasource:
     hikari:
       driver-class-name: com.mysql.cj.jdbc.Driver
-      jdbc-url: "jdbc:mysql://mysql_auth:3306/${MYSQL_DATABASE}?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Seoul"
-      username: ${MYSQL_USER}
-      password: ${MYSQL_PASSWORD}
+      jdbc-url: "jdbc:mysql://${MYSQL_AUTH_HOST}:3306/${MYSQL_AUTH_DATABASE}?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Seoul"
+      username: ${MYSQL_AUTH_USER}
+      password: ${MYSQL_AUTH_PASSWORD}
+
   jpa:
     hibernate:
       ddl-auto: update
