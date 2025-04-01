@@ -4,7 +4,7 @@ spring:
   datasource:
     hikari:
       driver-class-name: com.mysql.cj.jdbc.Driver
-      jdbc-url: jdbc:mysql://${MYSQL_AUTH_HOST}:3306/${MYSQL_AUTH_DATABASE}?useUnicode=true&characterEncoding=utf8mb4&serverTimezone=Asia/Seoul
+      jdbc-url: "jdbc:mysql://${MYSQL_AUTH_HOST}:3306/${MYSQL_AUTH_DATABASE}?useUnicode=true&characterEncoding=UTF-8&characterSetResults=utf8mb4"
       username: ${MYSQL_AUTH_USER}
       password: ${MYSQL_AUTH_PASSWORD}
 
