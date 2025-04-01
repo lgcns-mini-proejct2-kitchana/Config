@@ -10,6 +10,7 @@ spring:
           enabled: true
           lower-case-service-id: true
       globalcors:
+        add-to-simple-url-handler-mapping: true
         cors-configurations:
           '[/**]':
             allowed-origins: ${FRONTEND_SERVER}
@@ -18,8 +19,10 @@ spring:
               - POST
               - PUT
               - DELETE
+              - OPTIONS   
             allowed-headers: "*"
             allow-credentials: true
+            
       routes:
         - id: article
           predicates:
