@@ -20,7 +20,10 @@ spring:
               - PUT
               - DELETE
               - OPTIONS   
-            allowed-headers: "*"
+            allowed-headers:
+              - Content-Type
+              - Authorization
+              - X-Requested-With
             allow-credentials: true
             
       routes:
