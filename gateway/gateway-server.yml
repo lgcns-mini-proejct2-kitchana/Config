@@ -21,6 +21,10 @@ spring:
               - DELETE
               - OPTIONS   
             allowed-headers:
+              - X-USER-ID
+              - X-User-Role
+              - X-User-Email
+              - X-User-Nickname
               - Content-Type
               - Authorization
               - X-Requested-With
