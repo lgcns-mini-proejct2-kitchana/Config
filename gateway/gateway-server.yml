@@ -37,19 +37,19 @@ spring:
             - Path=/article/**
           uri: lb://ARTICLE
           filters:
-            - RewritePath=/article/(?<segment>.*), /article/${segment}
+            - RewritePath=/article/(?<segment>.*), /${segment}
         - id: authentication
           predicates:
             - Path=/authentication/**
           uri: lb://AUTHENTICATION
           filters:
-            - RewritePath=/authentication/(?<segment>.*), /authentication/${segment}
+            - RewritePath=/authentication/(?<segment>.*), /${segment}
         - id: kitcha-board
           predicates:
             - Path=/kitcha-board/**
           uri: lb://KITCHA-BOARD
           filters:
-            - RewritePath=/kitcha-board/(?<segment>.*), /board/${segment}
+            - RewritePath=/kitcha-board/(?<segment>.*), /${segment}
   rabbitmq:
     host: rabbitmq
     port: 5672
